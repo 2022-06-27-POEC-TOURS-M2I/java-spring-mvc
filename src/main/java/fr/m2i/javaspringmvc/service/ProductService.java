@@ -17,13 +17,11 @@ public class ProductService {
         this.repo = repo;
         this.userService = userService;
     }
-    
-    // lister les produits
-    
+
     public List<Product> findAll() {
         return repo.findAll();
     }
-    
+
     // find by id
     
     // save

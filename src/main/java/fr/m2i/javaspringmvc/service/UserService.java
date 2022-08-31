@@ -16,19 +16,19 @@ public class UserService {
     }
 
     public Double getBalance() throws Exception {
-        User user = repo.findById(1L).orElseThrow(() -> new Exception()); // Todo throw a custom exception called NotFoundException
+        User user = repo.findById(1L).orElseThrow(() -> new Exception());
         return user.getBalance();
     }
 
     public void addBalance(Double balance) throws Exception {
-        User user = repo.findById(1L).orElseThrow(() -> new Exception()); // Todo throw a custom exception called NotFoundException
+        User user = repo.findById(1L).orElseThrow(() -> new Exception());
         user.setBalance(user.getBalance() + balance);
 
         repo.save(user);
     }
 
     public void decreaseBalance(Double balance) throws Exception {
-        User user = repo.findById(1L).orElseThrow(() -> new Exception()); // Todo throw a custom exception called NotFoundException
+        User user = repo.findById(1L).orElseThrow(() -> new Exception());
         user.setBalance(user.getBalance() - balance);
 
         repo.save(user);
