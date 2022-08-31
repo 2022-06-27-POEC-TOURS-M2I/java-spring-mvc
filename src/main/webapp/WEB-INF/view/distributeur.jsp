@@ -41,6 +41,20 @@
                 <input type="submit" value="Ajouter" />
             </fieldset>
         </form:form>
+
+        <br />
+        
+        <form:form method="POST" action="/buyProduct" modelAttribute="buyProductForm">
+            <fieldset>
+                <legend>Acheter un produit</legend>
+                <p>
+                    <form:label path="id">Numéro du produit :</form:label>
+                    <form:input path="id" type="number" />
+                    <form:errors path="id" />
+                </p>
+                <input type="submit" value="Acheter" />
+            </fieldset>
+        </form:form>
         
     </body>
 </html>
